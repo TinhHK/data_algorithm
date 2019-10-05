@@ -2,6 +2,18 @@
 - phải xác định đc điểm dừng
 - các chỉ thị lệnh ở sau nó và các biến local sẽ được lưu vào trong Stack khi hàm gọi chính nó,
   Hết đệ quy(đạt đến điều kiện dừng) thì gọi Stack lấy dữ liệu ra chạy tiếp phần đang chạy dở.
+  ===> nhưng nếu là return hàm đệ quy luôn thì sẽ ko lưu gì cả.
+  vd:
+  		recurion($a, $b);
+  		if(something){
+  			recusion($b, $c);
+  		}
+  		==> chạy hết recursion($a, $b) xong, quay lại chạy tiếp recursion($b, $c)
+
+  		return recursion($a, $b);
+  		if(something) recursion($b, $c)
+  		==> chỉ chạy recursion($a, $b), còn recursion($b, $c) thì xin lỗi tình yêu.
+
 - thường dùng cho menu
 
 - Linear recursion: hàm chỉ gọi lại chính nó 1 lần
