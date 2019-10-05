@@ -18,7 +18,7 @@ function search(array $a, int $b)
 	return 'Không tìm thấy'; // return -1;
 }
 $time_start = microtime(true);
-echo search([1, 2, 3, 6 ,8, 10, 12], 1);
+echo search([1, 2, 3, 6 ,8, 10, 12], 13);
 $time_end = microtime(true);
 
 //dividing with 60 will give the execution time in minutes otherwise seconds

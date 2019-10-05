@@ -5,7 +5,7 @@
 - thường dùng cho menu
 
 - Linear recursion: hàm chỉ gọi lại chính nó 1 lần
-- Tail recursion: lời gọi đệ quy đc thực hiện ở cuối hàm.
+- Tail recursion: lời gọi đệ quy đc thực hiện ở cuối hàm, ko lưu stack vì gọi ở cuối.
 - Binary recursion: gọi 2 lần chính nó
 - Exponential recursion(đệ quy đa tuyến): trong hàm có vòng lặp gọi lại đệ quy của chính nó.
   Độ phức tạp thường là O(a^n)
