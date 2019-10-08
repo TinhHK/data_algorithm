@@ -17,7 +17,7 @@ function shaker_sort(array $arr)
 	$right = count($arr)-1;
 	$k = $right;
 	while($left < $right){
-		// move max element to last position
+		// move large element to the end of array
 		for($i = $left; $i < $right; $i++){
 			if($arr[$i] > $arr[$i+1]){
 				$temp = $arr[$i];
@@ -28,6 +28,7 @@ function shaker_sort(array $arr)
 		}
 		$right = $k;
 
+		// move min element to the beginning of array
 		for($i= $right; $i > $left; $i--){
 			if($arr[$i] < $arr[$i-1]){
 				$temp = $arr[$i];
