@@ -1,11 +1,18 @@
 <?php
 
+function print_array(array $arr){
+	for($i = 0; $i < count($arr); $i++){
+		if($i == count($arr) -1){
+			echo "$arr[$i] <br>";
+		} else {
+			echo "$arr[$i] -- ";
+		}
+	}
+}
+
 function shaker_sort(array $arr)
 {
-	// for($i = 0; $i < count($arr); $i++){
-	// 	echo "$arr[$i] *** ";
-	// }
-	// echo "<br>";
+	print_array($arr);
 	$left = 0;
 	$right = count($arr)-1;
 	$k = $right;
@@ -19,12 +26,7 @@ function shaker_sort(array $arr)
 				$k = $i;
 			}
 		}
-		// for($i = 0; $i < count($arr); $i++){
-		// 	echo "$arr[$i] *** ";
-		// }
-		// echo "<br>";
 		$right = $k;
-
 
 		for($i= $right; $i > $left; $i--){
 			if($arr[$i] < $arr[$i-1]){
@@ -34,16 +36,10 @@ function shaker_sort(array $arr)
 				$k = $i;
 			}
 		}
-		// for($i = 0; $i < count($arr); $i++){
-		// 	echo "$arr[$i] *** ";
-		// }
-		// echo "<br>";
 		$left = $k;
 
 	}
-	for($i = 0; $i < count($arr); $i++){
-		echo "$arr[$i] *** ";
-	}
+	print_array($arr);
 
 }
 
