@@ -13,3 +13,11 @@ trong cặp phần tử đó về vị trí đứng đầu dãy hiện hành, sa
 - chọn phần tử đầu tiên là phần tử nhỏ nhất là a
 - tìm phần tử nhỏ nhất của n -1 phần tử còn lại trong mảng là b
 - so sánh a với b, nếu a > b, swap a và b, tiếp tục vòng lặp với selection là phần tử thứ 2.
+- Độ phức tạp: n(n-1)/2
+
+4. Insertion sort:
+- mảng cần sắp xếp A
+- lấy phần tử đầu mảng A ra cho vào mảng B
+- lấy phần tử tiếp theo của A, sẵp xếp với phần tử trong mảng B
+- lấy hết phần tử của mảng A cho vào mảng B ta đc một mảng theo thứ tự.
+- Độ phức tạp : n(n-1)/2
