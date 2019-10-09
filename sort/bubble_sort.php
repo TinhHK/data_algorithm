@@ -1,8 +1,10 @@
 <?php
 
-function bubble_sort(array $arr)
+require "common.php";
+
+function bubble_sort(array $arr): array
 {
-	for($i = 0; $i < count($arr); $i++){
+	for($i = 0; $i < count($arr)-1; $i++){
 		// j chạy từ cuối mảng về đến trưóc vị trí i
 		for($j = count($arr) -1; $j > $i; $j--){
 			if($arr[$j] < $arr[$j-1]){
@@ -12,10 +14,9 @@ function bubble_sort(array $arr)
 			}
 		}
 	}
-	for($i = 0; $i < count($arr); $i++){
-		echo $arr[$i]."<br>";
-	}
-	//return $arr;
+	return $arr;
 }
 
-bubble_sort([1, 2, 10, 9, 8, 12, 18, 20]);
+$arr = createAnArray(8);
+print_array($arr);
+print_array(bubble_sort($arr));
