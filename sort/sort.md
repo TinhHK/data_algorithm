@@ -15,8 +15,10 @@ trong cặp phần tử đó về vị trí đứng đầu dãy hiện hành, sa
 - so sánh a với b, nếu a > b, swap a và b, tiếp tục vòng lặp với selection là phần tử thứ 2.
 - Độ phức tạp: n(n-1)/2
 
-4. Insertion sort 
+4. Insertion sort
 - lấy phần tử đầu tiên coi là dãy có thứ tự
 - insert phân tử tiếp theo vào dãy sao cho có thứ tự
 - thực hiện insert đến hết mảng
 - Độ phức tạp : n(n-1)/2
+
+5. Interchange Sort: ngược lại với Bubble sort (chạy từ cuối dãy)
