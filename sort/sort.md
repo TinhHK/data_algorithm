@@ -22,3 +22,7 @@ trong cặp phần tử đó về vị trí đứng đầu dãy hiện hành, sa
 - Độ phức tạp : n(n-1)/2
 
 5. Interchange Sort: ngược lại với Bubble sort (chạy từ cuối dãy)
+
+6. Quick sort: chia ra 3 phần left[] < pivot < right[], chia nhỏ tiếp đến khi
+               mảng left còn 2 phần tử và mảng right còn 2 phần tử.
+- Độ phức tạp: O(n2)
