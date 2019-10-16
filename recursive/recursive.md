@@ -14,8 +14,8 @@
   		if(something) recursion($b, $c)
   		==> chỉ chạy recursion($a, $b), còn recursion($b, $c) thì xin lỗi tình yêu.
 
+- Tóm lại: chạy đến điều kiện dừng rồi từ đó quay lại các hàm bên trên nó để trả về kết quả.
 - thường dùng cho menu
-
 - Linear recursion: hàm chỉ gọi lại chính nó 1 lần
 - Tail recursion: lời gọi đệ quy đc thực hiện ở cuối hàm, ko lưu stack vì gọi ở cuối.
 - Binary recursion: gọi 2 lần chính nó

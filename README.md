@@ -9,3 +9,5 @@
 
 Data structure + Algorithm = Program
 Cấu trúc dữ liệu quyết định giải thuật.
+
+* chú ý: khi truyền mảng vào để sort or search, chúng ta nên dùng tham biến để khỏi mất địa chỉ.
