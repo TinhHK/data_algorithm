@@ -26,3 +26,6 @@ trong cặp phần tử đó về vị trí đứng đầu dãy hiện hành, sa
 6. Quick sort: chia ra 3 phần left[] < pivot < right[], chia nhỏ tiếp đến khi
                mảng left còn 2 phần tử và mảng right còn 2 phần tử.
 - Độ phức tạp: O(n2)
+
+7. Merge sort: tách mảng ra thành 2 mảng con đưọc sắp xếp, trộn hai mảng đã đưọc sắp xếp thành 1 mảng.
+- Độ phức tạp O(nlogn)
