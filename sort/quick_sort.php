@@ -4,6 +4,8 @@ require "common.php";
 
 function quick_sort(array &$arr, int $left, int $right)
 {
+	// $left = $right when array only has 1 element, $left > $right when array only has 2 elements and
+	// we swap them so $i++ > $j-- [1], or [1] vs [2] or [3] vs [2]
 	if($left >= $right) {
 		return;
 	}

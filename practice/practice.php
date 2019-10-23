@@ -2,21 +2,26 @@
 
 require "../sort/common.php";
 
-function newBuble(array &$arr)
+function quick(array $arr, int $left, int $right)
 {
-	// loop up to n-1 times
-	for($i = 0; $i < count($arr)-1; $i++){
-		// loop up to n times to compare a couple of adjacent elements
-		for($j = 0; $j < count($arr)-1 -$i; $j++){
-			if($arr[$j] > $arr[$j+1]){
-				$temp = $arr[$j];
-				$arr[$j] = $arr[$j+1];
-				$arr[$j+1] = $temp;
-			}
+	if($left >= $right) return;
+	$i = $left;
+	$j = $right;
+	$pivot = $arr[floor(($right + $left)/2)];
+	while($i < $j){
+		while($arr[$i] < $pivot) $i++;
+		while($arr[$j] > $pivot) $j--;
+		if($i <= $j){
+			$temp = $arr[$i];
+			$arr[$i] = $arr[$j];
+			$arr[$j] = $temp;
+			$i++;
+			$j--;
 		}
 	}
-	return $arr;
+	quick($arr, $left, $j);
+	quick($arr, $i, $right);
 }
 $arr = createAnArray(8);
 print_array($arr);
-print_array(newBuble($arr));
+print_array(quick($arr,0, 7));
