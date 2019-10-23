@@ -4,6 +4,7 @@ require "common.php";
 // merge two arrays
 function merge(array &$arr, int $left, int $mid, int $right)
 {
+	//echo "merge(arr, $left, $mid, $right)<br>";
 	// length of 2 arrays
 	$n1 = $mid - $left + 1;
 	$n2 = $right - $mid;

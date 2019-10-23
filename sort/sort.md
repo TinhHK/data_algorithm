@@ -22,7 +22,7 @@
 
 6. Quick sort: chia mảng thành các mảng con dựa vào pivot đã chọn, tiến trình tiếp tục cho đến khi độ đài của
                các mảng con đều bằng 1
-- Độ phức tạp: O(nlogn)
+- Độ phức tạp: O(n2)
 
-7. Merge sort: tách mảng ra thành 2 mảng con đưọc sắp xếp, trộn hai mảng đã đưọc sắp xếp thành 1 mảng.
+7. Merge sort: tách mảng ra thành 2 mảng con cho tới khi mảng con chỉ còn lại 1 phần tử, sau đó trộn các mảng con lại với nhau.
 - Độ phức tạp O(nlogn)
